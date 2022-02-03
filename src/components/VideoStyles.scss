@@ -1,0 +1,60 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  object-fit: contain;
+
+  #video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .content {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 40vh;
+
+    h1 {
+      font-size: 4rem;
+      color: #f8f8f8;
+      @media screen and (max-width: 640px) {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
+      color: #f8f8f8;
+      @media screen and (max-width: 640px) {
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+      }
+    }
+    .btn {
+      padding: 12px 32px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      background: transparent;
+      color: #f8f8f8;
+      cursor: pointer;
+      border: 1px solid gray;
+      margin: 0 5px;
+    }
+
+    .btn-light {
+      background: rgb(73, 68, 68);
+    }
+
+    .btn:hover {
+      background: rgb(90, 87, 87);
+    }
+  }
+}

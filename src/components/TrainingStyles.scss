@@ -1,0 +1,60 @@
+.btn {
+  border: 1px solid gray;
+  color: #f8f8f8;
+  padding: 10px 20px;
+  background-color: #000;
+  font-size: 20px;
+  &:hover {
+    cursor: pointer;
+    background-color: gray;
+  }
+}
+
+.training {
+  width: 100%;
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100%;
+
+  .left {
+    text-align: center;
+    margin: auto;
+    padding: 1rem 4rem;
+    max-width: 600px;
+
+    p {
+      margin: 1.2rem 0;
+    }
+  }
+
+  .right {
+    width: 100%;
+
+    .img-container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      position: relative;
+      align-items: center;
+      text-align: center;
+
+      .top {
+        grid-column: 1 / span 8;
+        grid-row: 1;
+        padding-top: 20%;
+        z-index: 5;
+      }
+
+      .bottom {
+        grid-column: 4 / -1;
+        grid-row: 1;
+        z-index: 5;
+      }
+
+      .img {
+        max-width: 60%;
+        border: 1px solid #333;
+      }
+    }
+  }
+}
